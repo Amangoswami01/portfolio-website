@@ -10,20 +10,12 @@
 <body>
     <div class="container">
         <img src="https://via.placeholder.com/100" alt="Profile Picture" class="profile-img">  
-       <div class="projects fade-in">
-    <h2>My Projects</h2>
-    <div class="project-card">
-        <h3>Portfolio Website</h3>
-        <p>A simple portfolio website built using HTML, CSS, and JavaScript.</p>
-        <a href="https://yourgithubusername.github.io/portfolio-website/" target="_blank">View Project</a>
-    </div>
-</div>
-
+        
         <button onclick="changeMessage()">Click Me</button>  
         <button onclick="toggleTheme()">Toggle Theme</button>  
 
-        <!-- Projects Section Added Here -->
-        <div class="projects">
+        <!-- Projects Section -->
+        <div class="projects fade-in">
             <h2>My Projects</h2> 
 
             <div class="project-card">
@@ -37,6 +29,17 @@
                 <p>An interactive Power BI dashboard for data visualization.</p>
                 <a href="https://yourgithubusername.github.io/powerbi-dashboard/" target="_blank">View Project</a>
             </div>
+        </div>
+
+        <!-- Contact Form Section Added Here -->
+        <div class="contact-form fade-in">
+            <h2>Contact Me</h2>
+            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
         </div>
 
         <!-- Social Media Links -->
