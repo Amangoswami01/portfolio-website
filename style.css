@@ -39,11 +39,13 @@ button:hover {
 
 /* Profile Image */
 .profile-img {
-    width: 100px;
+    width: 100px; /* Adjust as needed */
     height: 100px;
-    border-radius: 50%;
-    border: 3px solid white;
-    margin-bottom: 15px;
+    border-radius: 50%; /* Perfectly circular image */
+    display: block;
+    margin: 0 auto; /* Centering */
+    border: 3px solid white; /* Clean border */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
 }
 
 /* Social Icons */
@@ -73,12 +75,17 @@ button:hover {
 }
 
 .dark-mode button {
-    background: #ffd700;
-    color: black;
+    background-color: #ff69b4; /* Soft pink */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
 }
-
 .dark-mode button:hover {
-    background: #ffcc00;
+    background-color: #ff1493; /* Darker pink on hover */
 }
 /* Projects Section */
 .projects {
