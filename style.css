@@ -62,3 +62,21 @@ button:hover {
 .social-links a:hover {
     color: #ff7eb3;
 }
+/* Dark Mode Styles */
+.dark-mode {
+    background: linear-gradient(135deg, #232526, #414345);
+    color: #ddd;
+}
+
+.dark-mode .container {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.dark-mode button {
+    background: #ffd700;
+    color: black;
+}
+
+.dark-mode button:hover {
+    background: #ffcc00;
+}
