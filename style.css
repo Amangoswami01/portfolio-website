@@ -49,15 +49,18 @@ button:hover {
 
 /* Social Icons */
 .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between icons */
     margin-top: 20px;
 }
 
 .social-links a {
+    display: flex;
+    align-items: center;
     text-decoration: none;
-    color: white;
-    margin: 0 10px;
-    font-size: 22px;
-    transition: 0.3s;
+    font-size: 18px;
+    color: black;
 }
 
 .social-links a:hover {
