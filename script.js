@@ -18,6 +18,27 @@ function revealOnScroll() {
         }
     });
 }
+<form id="contactForm">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+</form>
+
+<p id="confirmationMessage" style="display:none; color:green; font-weight:bold;">
+    ✅ Your message has been sent successfully!
+</p>
+
+<script>
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // Form ko refresh hone se roko
+        document.getElementById("confirmationMessage").style.display = "block";
+        setTimeout(() => {
+            document.getElementById("confirmationMessage").style.display = "none";
+        }, 5000);
+        this.reset(); // Form fields clear karega
+    });
+</script>
 
 window.addEventListener("scroll", revealOnScroll);
 revealOnScroll();
