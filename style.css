@@ -21,21 +21,20 @@ body {
 
 /* Button Styling */
 button {
-    padding: 12px 25px;
+    background-color: #ff69b4; /* Soft pink */
     border: none;
-    background: #ff7eb3;
-    color: white;
-    font-size: 18px;
-    cursor: pointer;
-    margin-top: 20px;
+    padding: 10px 20px;
     border-radius: 8px;
-    transition: all 0.3s ease;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
 }
 
 button:hover {
-    background: #ff4f85;
-    transform: scale(1.1);
+    background-color: #ff1493; /* Darker pink on hover */
 }
+
 
 /* Profile Image */
 .profile-img {
@@ -75,17 +74,12 @@ button:hover {
 }
 
 .dark-mode button {
-    background-color: #ff69b4; /* Soft pink */
-    border: none;
-    padding: 10px 20px;
-    border-radius: 8px;
-    font-size: 16px;
-    color: white;
-    cursor: pointer;
-    transition: background 0.3s ease;
+    background: #ffd700;
+    color: black;
 }
+
 .dark-mode button:hover {
-    background-color: #ff1493; /* Darker pink on hover */
+    background: #ffcc00;
 }
 /* Projects Section */
 .projects {
