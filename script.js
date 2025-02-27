@@ -18,6 +18,13 @@ function revealOnScroll() {
         }
     });
 }
-
+ document.getElementById("contactForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // Form ko refresh hone se roko
+        document.getElementById("confirmationMessage").style.display = "block";
+        setTimeout(() => {
+            document.getElementById("confirmationMessage").style.display = "none";
+        }, 5000);
+        this.reset(); // Form fields clear karega
+    });
 window.addEventListener("scroll", revealOnScroll);
 revealOnScroll();
