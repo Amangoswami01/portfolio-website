@@ -80,3 +80,33 @@ button:hover {
 .dark-mode button:hover {
     background: #ffcc00;
 }
+/* Projects Section */
+.projects {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.project-card {
+    background: white;
+    color: black;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-card a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.project-card a:hover {
+    color: #0056b3;
+}
