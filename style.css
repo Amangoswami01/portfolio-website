@@ -15,7 +15,7 @@ body {
     width: 100%;
     top: 0;
     left: 0;
-    padding: 15px 20px;
+    padding: 0px 20px;
     background: transparent; /* Dark Purple */
     transition: background 0.3s ease-in-out;
     z-index: 1000;
