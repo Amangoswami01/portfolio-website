@@ -260,7 +260,7 @@ button:hover {
 }
 
 .dark-mode-btn {
-    margin-bottom: 20px; /* Niche space dena */
+    margin-top: 20px; /* Niche space dena */
     padding: 10px 20px; /* Button ko proper size dena */
     background: #ff66b2;
     color: white;
