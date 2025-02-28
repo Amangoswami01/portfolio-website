@@ -30,5 +30,13 @@ function animateSkills() {
 
 window.onload = animateSkills;
 
+document.addEventListener("DOMContentLoaded", function() {
+    AOS.init({
+        duration: 1000,  // Animation duration (1 second)
+        once: true,      // Animation runs only once
+    });
+});
+
+
 window.addEventListener("scroll", revealOnScroll);
 revealOnScroll();
