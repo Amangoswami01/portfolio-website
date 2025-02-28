@@ -34,11 +34,14 @@ body {
     font-size: 18px;
     font-weight: bold;
     transition: color 0.3s;
+    padding: 5px 10px;
 }
 
-.navbar ul li a:hover {
-    color: #00c8ff;
+.navbar ul li a.active {
+    color: #00c8ff; /* Highlight color */
+    border-bottom: 2px solid #00c8ff;
 }
+
 
 /* Scroll Effect */
 .scrolled {
