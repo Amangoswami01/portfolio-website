@@ -14,6 +14,7 @@ body {
     display: flex;
     align-items: center; /* Vertical align */
     justify-content: space-between; /* Logo left, links right */
+    box-sizing: border-box;
     padding: 10px 20px;
     
     position: fixed;
