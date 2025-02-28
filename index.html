@@ -10,43 +10,52 @@
 
 </head>
 <body>
- <!-- ✅ Navbar Added Here -->
+
+    <!-- ✅ Navbar -->
     <header>
-    <nav class="navbar">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <!-- ✅ Hero Section -->
+    <section id="home">
+        <div class="hero">
+            <h1>Welcome to My Portfolio</h1>
+            <p>I am a Web Developer & Power BI Enthusiast.</p>
+        </div>
+    </section>
 
-    
     <div class="container">
-        <img src="https://via.placeholder.com/100" alt="Profile Picture" class="profile-img">  
-        
-        
-        <button onclick="toggleTheme()">Toggle Theme</button>  
+
         <div class="social-links">
             <a href="https://github.com/Amangoswami01" target="_blank">🔗 GitHub</a>
             <a href="https://www.linkedin.com/in/aman-goswami-m7/?originalSubdomain=in" target="_blank">🔗 LinkedIn</a>
         </div>
 
-        <!-- Projects Section -->
+        <!-- ✅ Skills Section -->
+        <section id="skills" data-aos="fade-up">
+            <h2>My Skills</h2>
+            <div class="skill"><p>HTML</p><div class="skill-bar"><div class="progress" data-progress="90"></div></div></div>
+            <div class="skill"><p>CSS</p><div class="skill-bar"><div class="progress" data-progress="80"></div></div></div>
+            <div class="skill"><p>JavaScript</p><div class="skill-bar"><div class="progress" data-progress="70"></div></div></div>
+            <div class="skill"><p>Power BI</p><div class="skill-bar"><div class="progress" data-progress="85"></div></div></div>
+        </section>
 
-        
-        <div class="projects fade-in">
-            <h2>My Projects</h2> 
-
+        <!-- ✅ Projects Section -->
+        <section id="projects" class="projects fade-in">
+            <h2>My Projects</h2>
             <div class="project-card">
                 <h3>Portfolio Website</h3>
                 <p>A simple portfolio website built using HTML, CSS, and JavaScript.</p>
-                <a href=" https://amangoswami01.github.io/portfolio-website/" target="_blank">View Project</a>
+                <a href="https://amangoswami01.github.io/portfolio-website/" target="_blank">View Project</a>
             </div>
-
             <div class="project-card">
                 <h3>Power BI Pizza-Sales-Dashboard</h3>
                 <p>An interactive Power BI dashboard for data visualization.</p>
@@ -55,73 +64,34 @@
             <div class="project-card">
                 <h3>Power BI Mobile-Sales-Dashboard</h3>
                 <p>An interactive Power BI dashboard for data visualization.</p>
-                <a href=" https://amangoswami01.github.io/mobile-sales-dashboard/" target="_blank">View Project</a>
+                <a href="https://amangoswami01.github.io/mobile-sales-dashboard/" target="_blank">View Project</a>
             </div>
-        </div>
+        </section>
 
-<!--  Skills Section -->
+        <!-- ✅ Testimonials Section -->
+        <section id="testimonials" class="testimonials" data-aos="fade-left">
+            <h2>What People Say</h2>
+            <div class="testimonial"><p>"Aman is a great developer! Highly recommended."</p><h4>- John Doe</h4></div>
+            <div class="testimonial"><p>"His Power BI dashboards are super insightful!"</p><h4>- Jane Smith</h4></div>
+            <div class="testimonial"><p>"Creative and professional. Love working with him!"</p><h4>- Alex Brown</h4></div>
+        </section>
 
-        
-        <div class="skills" id="skills" data-aos="fade-up">
-    <h2>My Skills</h2>
-    <div class="skill">
-        <p>HTML</p>
-        <div class="skill-bar"><div class="progress" data-progress="90"></div></div>
-    </div>  
-    <div class="skill">
-        <p>CSS</p>
-        <div class="skill-bar"><div class="progress" data-progress="80"></div></div>
-    </div>
-    <div class="skill">
-        <p>JavaScript</p>
-        <div class="skill-bar"><div class="progress" data-progress="70"></div></div>
-    </div>
-    <div class="skill">
-        <p>Power BI</p>
-        <div class="skill-bar"><div class="progress" data-progress="85"></div></div>
-    </div>
-</div>
-
-<!--         Testimonials Section -->
-        
-<div class="testimonials" id="testimonials" data-aos="fade-left">
-    <h2>What People Say</h2>
-    <div class="testimonial">
-        <p>"Aman is a great developer! Highly recommended."</p>
-        <h4>- John Doe</h4>
-    </div>
-    <div class="testimonial">
-        <p>"His Power BI dashboards are super insightful!"</p>
-        <h4>- Jane Smith</h4>
-    </div>
-    <div class="testimonial">
-        <p>"Creative and professional. Love working with him!"</p>
-        <h4>- Alex Brown</h4>
-    </div>
-</div>
-
-        <!-- Contact Form Section Added Here -->
-
-
-        
-        <div class="contact-form fade-in">
+        <!-- ✅ Contact Form Section -->
+        <section id="contact" class="contact-form fade-in">
             <h2>Contact Me</h2>
-       <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
                 <input type="text" name="name" placeholder="Your Name" required>
                 <input type="email" name="email" placeholder="Your Email" required>
                 <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
                 <button type="submit">Send Message</button>
             </form>
-        </div>
+        </section>
 
-        <!-- Social Media Links -->
-        
     </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-<script>
-    AOS.init();
-</script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>AOS.init();</script>
     <script src="script.js"></script> <!-- JavaScript Link -->
+
 </body>
 </html>
