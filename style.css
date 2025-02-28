@@ -116,9 +116,9 @@ body {
 }
 
 .hero-image img {
-    width: 300px;
+    width: 270px;
     height: auto;
-    border-radius: 50%;
+    border-radius: 30%;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
 
