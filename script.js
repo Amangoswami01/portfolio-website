@@ -81,6 +81,23 @@ document.querySelectorAll('.progress').forEach(bar => {
     let value = bar.getAttribute('data-progress');
     bar.style.width = value + '%';
 });
+document.addEventListener("DOMContentLoaded", function () {
+    const fadeElements = document.querySelectorAll('.fade-in');
+
+    function fadeInOnScroll() {
+        fadeElements.forEach(element => {
+            const elementTop = element.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+
+            if (elementTop < windowHeight - 50) {
+                element.classList.add('visible');
+            }
+        });
+    }
+
+    window.addEventListener("scroll", fadeInOnScroll);
+    fadeInOnScroll(); // Trigger on page load
+});
 
 
 document.addEventListener("DOMContentLoaded", function() {
