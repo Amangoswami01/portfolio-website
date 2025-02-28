@@ -18,6 +18,17 @@ function revealOnScroll() {
         }
     });
 }
- 
+ // skills js
+
+function animateSkills() {
+    let skills = document.querySelectorAll(".progress");
+    skills.forEach(skill => {
+        let value = skill.getAttribute("data-progress");
+        skill.style.width = value + "%";
+    });
+}
+
+window.onload = animateSkills;
+
 window.addEventListener("scroll", revealOnScroll);
 revealOnScroll();
