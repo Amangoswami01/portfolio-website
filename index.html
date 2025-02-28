@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="style.css"> <!-- CSS Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!-- SwiperJS CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
 
 </head>
 <body>
@@ -72,12 +75,42 @@
         </section>
 
         <!-- ✅ Testimonials Section -->
-        <section id="testimonials" class="testimonials" data-aos="fade-left">
-            <h2>What People Say</h2>
-            <div class="testimonial"><p>"Aman is a great developer! Highly recommended."</p><h4>- John Doe</h4></div>
-            <div class="testimonial"><p>"His Power BI dashboards are super insightful!"</p><h4>- Jane Smith</h4></div>
-            <div class="testimonial"><p>"Creative and professional. Love working with him!"</p><h4>- Alex Brown</h4></div>
-        </section>
+      <section id="testimonials" class="testimonials">
+    <h2>What People Say</h2>
+
+    <!-- ✅ Swiper Container -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            
+            <!-- ✅ Testimonial 1 -->
+            <div class="swiper-slide testimonial">
+                <p>"Aman is a great developer! Highly recommended."</p>
+                <h4>- John Doe</h4>
+            </div>
+
+            <!-- ✅ Testimonial 2 -->
+            <div class="swiper-slide testimonial">
+                <p>"His Power BI dashboards are super insightful!"</p>
+                <h4>- Jane Smith</h4>
+            </div>
+
+            <!-- ✅ Testimonial 3 -->
+            <div class="swiper-slide testimonial">
+                <p>"Creative and professional. Love working with him!"</p>
+                <h4>- Alex Brown</h4>
+            </div>
+
+        </div>
+
+        <!-- ✅ Swiper Navigation Buttons -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+        <!-- ✅ Swiper Pagination (Dots) -->
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+
 
         <!-- ✅ Contact Form Section -->
         <section id="contact" class="contact-form fade-in">
