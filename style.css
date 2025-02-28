@@ -73,6 +73,10 @@ body {
 }
 
 #hero {
+    scroll-margin-top: 80px;
+}
+
+#hero {
     display: flex;
     align-items: center;
     justify-content: space-between;
