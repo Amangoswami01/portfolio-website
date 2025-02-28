@@ -26,6 +26,30 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll(".navbar ul li a");
+
+    const observer = new IntersectionObserver(
+        entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    navLinks.forEach(link => {
+                        link.classList.remove("active");
+                        if (link.getAttribute("href").substring(1) === entry.target.id) {
+                            link.classList.add("active");
+                        }
+                    });
+                }
+            });
+        },
+        { threshold: 0.6 } // 60% section visible hone par activate hoga
+    );
+
+    sections.forEach(section => observer.observe(section));
+});
+
+
 // Scroll Animation Function
 function revealOnScroll() {
     let elements = document.querySelectorAll(".fade-in");
