@@ -111,6 +111,10 @@ body {
     }
 }
 
+section {
+    scroll-margin-top: 80px; /* Navbar ki height ke hisaab se adjust kar */
+    padding-top: 80px; /* Ye optional hai agar aur bhi gap chahiye */
+}
 
 
 /* ✅ Smooth Scrolling */
