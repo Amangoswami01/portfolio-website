@@ -110,6 +110,9 @@ body {
         display: flex;
     }
 }
+#home, #skills, #projects, #testimonials {
+    scroll-margin-top: 80px;
+}
 
 section {
     scroll-margin-top: 30px; /* Navbar ki height ke hisaab se adjust kar */
