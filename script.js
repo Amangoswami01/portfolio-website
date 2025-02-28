@@ -49,6 +49,10 @@ document.addEventListener("DOMContentLoaded", function () {
     sections.forEach(section => observer.observe(section));
 });
 
+document.getElementById("menu-toggle").addEventListener("click", function() {
+    document.getElementById("nav-links").classList.toggle("show");
+});
+
 
 // Scroll Animation Function
 function revealOnScroll() {
