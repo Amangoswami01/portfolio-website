@@ -83,15 +83,23 @@ button:hover {
 
 
 /* Profile Image */
+/* ✅ Profile Picture Styling */
 .profile-img {
-    width: 100px; /* Adjust as needed */
-    height: 100px;
-    border-radius: 50%; /* Perfectly circular image */
-    display: block;
-    margin: 10px auto; /* Centering */
-    border: 3px solid white; /* Clean border */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    width: 120px; /* Adjust size */
+    height: 120px;
+    border-radius: 50%; /* Makes it circular */
+    object-fit: cover;
+    border: 3px solid #6a0dad;
+    margin-bottom: 15px;
 }
+
+/* ✅ Navbar Logo Styling */
+.logo {
+    width: 50px; /* Adjust size */
+    height: auto;
+    margin-right: 15px;
+}
+
 
 /* Social Icons */
 .social-links {
