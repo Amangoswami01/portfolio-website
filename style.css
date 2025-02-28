@@ -11,6 +11,11 @@ body {
 
 /* Navbar Styles */
 .navbar {
+    display: flex;
+    align-items: center; /* Vertical align */
+    justify-content: space-between; /* Logo left, links right */
+    padding: 10px 20px;
+    
     position: fixed;
     width: 100%;
     top: 0;
@@ -19,6 +24,11 @@ body {
     background: transparent; /* Dark Purple */
     transition: background 0.3s ease-in-out;
     z-index: 1000;
+}
+
+.logo {
+    width: 50px; /* Adjust as needed */
+    height: auto;
 }
 
 .navbar ul {
