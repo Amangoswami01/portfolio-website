@@ -193,20 +193,33 @@ button:hover {
 
 .testimonials {
     text-align: center;
-    color: #0056b3;
-    margin: 40px 0;
-    overflow: hidden;
+    padding: 50px 20px;
+    background: #f8f9fa;
+}
+
+.swiper {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
 }
 
 .testimonial {
-    background: #fff;
-    padding: 10px;
-    margin: 10px auto;
-    width: 50%;
+    background: white;
+    padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-    animation: fadeIn 2s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #6a0dad;
+}
+
+.swiper-pagination-bullet {
+    background: #6a0dad;
+}
+
 
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
