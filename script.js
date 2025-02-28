@@ -7,6 +7,14 @@ function changeMessage() {
 function toggleTheme() {
     document.body.classList.toggle("dark-mode");
 }
+window.addEventListener("scroll", function() {
+    let navbar = document.getElementById("navbar");
+    if (window.scrollY > 50) { 
+        navbar.classList.add("scrolled");
+    } else {
+        navbar.classList.remove("scrolled");
+    }
+});
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener("click", function(e) {
