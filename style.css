@@ -202,6 +202,7 @@ button:hover {
 .testimonials {
     text-align: center;
     padding: 50px 20px;
+    margin: 50px auto;
     background: #f8f9fa;
     color: #3973fa;
 }
