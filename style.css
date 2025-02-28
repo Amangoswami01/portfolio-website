@@ -267,7 +267,7 @@ button:hover {
 .testimonials {
     text-align: center;
     padding: 50px 20px;
-    margin: 50px auto;
+    margin: 50px auto;  /*    aman */
     border-radius: 10px;
     background: #f8f9fa;
     color: #3973fa;
