@@ -30,6 +30,12 @@ function animateSkills() {
 
 window.onload = animateSkills;
 
+document.querySelectorAll('.progress').forEach(bar => {
+    let value = bar.getAttribute('data-progress');
+    bar.style.width = value + '%';
+});
+
+
 document.addEventListener("DOMContentLoaded", function() {
     AOS.init({
         duration: 1000,  // Animation duration (1 second)
