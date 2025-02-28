@@ -286,6 +286,21 @@ button:hover {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
+.testimonial {
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+}
+.testimonial-slider {
+    max-width: 90%;  /* Slider ko responsive banane ke liye */
+    padding: 20px;
+}
+
+.testimonial-card {
+    min-height: 120px;  /* Text ko cut hone se bachane ke liye */
+    padding: 20px;
+}
 
 .swiper-button-next,
 .swiper-button-prev {
