@@ -117,10 +117,11 @@ body {
 }
 
 .hero-image img {
-    width: 270px;
+    width: 180px; /* Image ko chhota karna */
     height: auto;
-    border-radius: 30%;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    border-radius: 50%; /* Circle shape */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-left: 20px; /* Thoda gap dena text se */
 }
 
 
@@ -257,6 +258,17 @@ button:hover {
     background: #ffd700;
     color: black;
 }
+
+.dark-mode-btn {
+    margin-bottom: 20px; /* Niche space dena */
+    padding: 10px 20px; /* Button ko proper size dena */
+    background: #ff66b2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 
 .dark-mode button:hover {
     background: #ffcc00;
