@@ -114,6 +114,36 @@ button:hover {
 .project-card a:hover {
     color: #0056b3;
 }
+
+/* Skills css */
+
+.skills {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.skill {
+    margin: 10px auto;
+    width: 80%;
+}
+
+.skill-bar {
+    width: 100%;
+    background: #ddd;
+    border-radius: 5px;
+    margin: 5px 0;
+    overflow: hidden;
+}
+
+.progress {
+    height: 10px;
+    background: #4caf50;
+    width: 0%;
+    border-radius: 5px;
+    transition: width 1s ease-in-out;
+}
+
+
 /* Fade-in effect */
 .fade-in {
     opacity: 0;
