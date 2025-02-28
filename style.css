@@ -59,6 +59,19 @@ body {
     border-bottom: 2px solid #00c8ff;
 }
 
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-wrap: wrap; /* Prevents items from overflowing */
+        text-align: center;
+    }
+
+    .navbar ul li {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+    }
+}
+
 
 /* Scroll Effect */
 .scrolled {
