@@ -210,13 +210,6 @@ body {
     background: #ff9900;
 }
 
-.hero-image img {
-    width: 180px; /* Image ko chhota karna */
-    height: auto;
-    border-radius: 50%; /* Circle shape */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    margin-left: 20px; /* Thoda gap dena text se */
-}
 
 
 /* Scroll Effect */
