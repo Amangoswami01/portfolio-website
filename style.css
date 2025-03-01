@@ -1,98 +1,4 @@
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    transition: background-color 0.3s ease;
-}
-
-/* Navbar */
-.navbar {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    background: #000;
-    padding: 10px 0;
-    text-align: center;
-}
-.navbar ul {
-    list-style: none;
-    padding: 0;
-}
-.navbar ul li {
-    display: inline;
-    margin: 0 15px;
-}
-.navbar ul li a {
-    color: white;
-    text-decoration: none;
-}
-.navbar a.active {
-    color: cyan;
-    font-weight: bold;
-}
-
-/* Hero Section */
-.hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    height: 80vh; /* Compact height */
-    padding: 20px;
-    position: relative;
-}
-
-.hero img {
-    width: 180px; /* Adjusted size */
-    border-radius: 50%;
-    margin-bottom: 10px; /* Space below image */
-}
-
-.hero h1 {
-    font-size: 2.5rem; /* Better heading size */
-    margin-top: 10px; /* Adjusted spacing */
-}
-
-
-.hero-content {
-    max-width: 600px;
-}
-
-/* Projects */
-.projects-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    padding: 50px 10px;
-}
-.project-card {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    width: 300px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Dark Mode Button */
-#darkModeToggle {
-    position: fixed;
-    bottom: 20px;
-    left: 90%;
-    transform: translateX(20%);
-    padding: 10px 10px;
-    background: #000;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-/* General Styling */
+/* ✅ General Styles */
 body {
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(135deg, #667eea, #764ba2);
@@ -103,59 +9,52 @@ body {
     transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-/* Navbar Styles */
+/* ✅ Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* ✅ Navbar */
 .navbar {
-    display: flex;
-    align-items: center; /* Vertical align */
-    justify-content: space-between; /* Logo left, links right */
-    box-sizing: border-box;
-    padding: 10px 20px;
-    
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
-    padding: 0px 20px;
-    background: transparent; /* Dark Purple */
-    transition: background 0.3s ease-in-out;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 10px 0;
+    text-align: center;
     z-index: 1000;
-}
-
-.logo {
-    width: 50px; /* Adjust as needed */
-    height: auto;
 }
 
 .navbar ul {
     list-style: none;
-    display: flex;
-    justify-content: space-between; /* Even spacing */
-    align-items: center;
     padding: 0;
-    margin: 0;
+    display: flex;
+    justify-content: center;
 }
 
 .navbar ul li {
-    padding: 0 15px; /* Proper spacing between menu items */
+    margin: 0 15px;
 }
 
 .navbar ul li a {
-    text-decoration: none;
     color: white;
-    font-size: 18px;
-    font-weight: bold;
-    transition: color 0.3s;
+    text-decoration: none;
     padding: 5px 10px;
+    font-size: 18px;
+    transition: 0.3s;
 }
 
 .navbar ul li a.active {
-    color: #00c8ff; /* Highlight color */
+    color: #00c8ff;
+    font-weight: bold;
     border-bottom: 2px solid #00c8ff;
 }
 
+/* ✅ Responsive Navbar */
 @media (max-width: 768px) {
     .navbar ul {
-        flex-wrap: wrap; /* Prevents items from overflowing */
+        flex-wrap: wrap;
         text-align: center;
     }
 
@@ -166,204 +65,40 @@ body {
     }
 }
 
-#hero {
-    scroll-margin-top: 80px;
+/* ✅ Hero Section */
+.hero {
+    display: flex;
+    flex-direction: column-reverse; /* Image ko text ke upar laane ke liye */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 75vh; /* Adjusted height */
+    padding: 20px;
 }
 
-#hero {
-    display: flex
-;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0px 6%;
-    height: 100vh;
-    background: linear-gradient(to right, #6a11cb, #2575fc);
-    color: white;
+.hero img {
+    width: 180px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 3px solid #fff;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-top: 10px;
 }
 
 .hero-content {
-    max-width: 50%;
+    max-width: 600px;
 }
 
-.hero-content h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-}
-
-.hero-content p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-}
-
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background: #ffcc00;
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: 0.3s;
-}
-
-.btn:hover {
-    background: #ff9900;
-}
-
-
-
-/* Scroll Effect */
-.scrolled {
-    background: rgba(0, 0, 0, 0.9);  /* Dark navbar on scroll */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.menu-toggle {
-    display: none;
-    font-size: 30px;
-    cursor: pointer;
-    color: white;
-    position: absolute;
-    top: 10px;
-    right: 20px;
-}
-
-@media screen and (max-width: 768px) {
-    .menu-toggle {
-        display: block;
-    }
-
-    .navbar ul {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 50px;
-        right: 0;
-        background: rgba(0, 0, 0, 0.9);
-        width: 200px;
-        text-align: right;
-        padding: 10px;
-    }
-
-    .navbar ul.show {
-        display: flex;
-    }
-}
-#testimonials, #contact {
-    scroll-margin-top: 80px;
-}
-
-section {
-    scroll-margin-top: 30px; /* Navbar ki height ke hisaab se adjust kar */
-    padding-top: 30px; /* Ye optional hai agar aur bhi gap chahiye */
-}
-
-
-/* ✅ Smooth Scrolling */
-html {
-    scroll-behavior: smooth;
-}
-
-.dark-mode .project-card {
-    background: #333;
-    color: white;
-}
-.cta-button {
-    padding: 12px 20px;
-    font-size: 16px;
-    border-radius: 5px;
-}
-
-
-/* Portfolio Card */
-.container {
-    max-width: 500px;
-    margin: 70px auto;
-    background: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(10px);
-}
-
-/* Button Styling */
-button {
-    background-color: #ff69b4; /* Soft pink */
-    border: none;
-    padding: 10px 20px;
-    border-radius: 8px;
-    font-size: 16px;
-    color: white;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-button:hover {
-    background-color: #ff1493; /* Darker pink on hover */
-}
-
-
-/* Profile Image */
-/* ✅ Profile Picture Styling */
-.profile-img {
-    width: 120px; /* Adjust size */
-    height: 120px;
-    border-radius: 50%; /* Makes it circular */
-    object-fit: cover;
-    border: 3px solid #6a0dad;
-    margin-bottom: 15px;
-}
-
-/* ✅ Navbar Logo Styling */
-.logo {
-    width: 50px; /* Adjust size */
-    height: auto;
-    margin-right: 15px;
-}
-
-
-/* Social Icons */
-.social-links {
+/* ✅ Projects Section */
+.projects-container {
     display: flex;
     justify-content: center;
-    gap: 20px; /* Space between icons */
-    margin-top: 20px;
-}
-
-.social-links a {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    font-size: 18px;
-    color: black;
-}
-
-.social-links a:hover {
-    color: #ff7eb3;
-}
-/* Dark Mode Styles */
-.dark-mode {
-    background: linear-gradient(135deg, #232526, #414345);
-    color: #ddd;
-}
-
-.dark-mode .container {
-    background: rgba(0, 0, 0, 0.2);
-}
-
-.dark-mode button {
-    background: #ffd700;
-    color: black;
-}
-
-.dark-mode button:hover {
-    background: #ffcc00;
-}
-/* Projects Section */
-.projects {
-    max-width: 800px;
-    margin: 50px auto;
-    text-align: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 50px 10px;
 }
 
 .project-card {
@@ -390,8 +125,7 @@ button:hover {
     color: #0056b3;
 }
 
-/* Skills css */
-
+/* ✅ Skills Section */
 .skills {
     text-align: center;
     margin: 40px 0;
@@ -418,12 +152,11 @@ button:hover {
     transition: width 1s ease-in-out;
 }
 
-/* Testimonials Section */
-
+/* ✅ Testimonials Section */
 .testimonials {
     text-align: center;
     padding: 50px 20px;
-    margin: 50px auto;  /*    aman */
+    margin: 50px auto;
     border-radius: 10px;
     background: #f8f9fa;
     color: #3973fa;
@@ -438,18 +171,16 @@ button:hover {
 .testimonial {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    white-space: normal;
-    overflow: hidden;
-    text-overflow: ellipsis;
     word-wrap: break-word;
 }
+
 .testimonial-slider {
-    max-width: 90%;  /* Slider ko responsive banane ke liye */
+    max-width: 90%;
     padding: 20px;
 }
 
 .testimonial-card {
-    min-height: 120px;  /* Text ko cut hone se bachane ke liye */
+    min-height: 120px;
     padding: 20px;
 }
 
@@ -462,28 +193,40 @@ button:hover {
     background: #6a0dad;
 }
 
-
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+/* ✅ Dark Mode */
+.dark-mode {
+    background: linear-gradient(135deg, #232526, #414345);
+    color: #ddd;
 }
 
-
-/* Fade-in effect */
-.fade-in {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
+.dark-mode .project-card, .dark-mode .testimonial-card {
+    background: #333;
+    color: white;
 }
 
-.fade-in.visible {
-    opacity: 1;
-    transform: translateY(0);
+.dark-mode button {
+    background: #ffd700;
+    color: black;
 }
 
+.dark-mode button:hover {
+    background: #ffcc00;
+}
+
+/* ✅ Profile Picture Styling */
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #6a0dad;
+    margin-bottom: 15px;
+}
+
+/* ✅ Contact Form */
 .contact-form {
     max-width: 500px;
-    margin: 0 auto; /* Centering */
+    margin: 0 auto;
     padding: 20px;
     background: white;
     border-radius: 10px;
@@ -508,7 +251,7 @@ button:hover {
 
 .contact-form textarea {
     resize: none;
-    height: 120px; /* Fix for better height */
+    height: 120px;
 }
 
 .contact-form button {
@@ -526,6 +269,8 @@ button:hover {
 .contact-form button:hover {
     background: #0056b3;
 }
+
+/* ✅ Footer */
 footer {
     background: #333;
     color: white;
@@ -560,4 +305,3 @@ footer .social-links a:hover {
 .back-to-top:hover {
     background: #540a9d;
 }
-
