@@ -1,1 +1,193 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css"> <!-- CSS Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!-- SwiperJS CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+</head>
+<body>
+
+    <nav class="navbar" id="navbar">
+        <!-- ✅ Logo Added -->
+        <img src="https://github.com/Amangoswami01/portfolio-website/blob/main/Aman%20logo.png?raw=true"  
+             alt="Aman Logo" class="logo"> 
+        
+        <!-- ✅ Hamburger Menu Button -->
+        <div class="menu-toggle" id="menu-toggle">
+            ☰
+        </div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to My Portfolio</h1>
+            <p>I am a passionate web developer, skilled in HTML, CSS, JavaScript, and Power BI.</p>
+            <a href="#projects" class="cta-button">View Projects</a>
+        </div>
+        <div class="hero-image">
+            <img src="https://github.com/Amangoswami01/portfolio-website/blob/main/aman.jpg?raw=true" alt="My Profile">
+        </div>
+    </section>
+
+    <div class="social-links">
+        <a href="https://github.com/Amangoswami01" target="_blank">🔗 GitHub</a>
+        <a href="https://www.linkedin.com/in/aman-goswami-m7/?originalSubdomain=in" target="_blank">🔗 LinkedIn</a>
+    </div>
+
+    <!-- ✅ Skills Section -->
+    <section id="skills" data-aos="fade-up">
+        <h2>My Skills</h2>
+        <div class="skill"><p>HTML</p><div class="skill-bar"><div class="progress" data-progress="90"></div></div></div>
+        <div class="skill"><p>CSS</p><div class="skill-bar"><div class="progress" data-progress="80"></div></div></div>
+        <div class="skill"><p>JavaScript</p><div class="skill-bar"><div class="progress" data-progress="70"></div></div></div>
+        <div class="skill"><p>Power BI</p><div class="skill-bar"><div class="progress" data-progress="85"></div></div></div>
+    </section>
+
+
+    <!-- Projects Section -->
+    <section id="projects"  class="projects fade-in">
+        <h2>My Projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <h3>Portfolio Website</h3>
+                <p>A simple portfolio website built using HTML, CSS, and JavaScript.</p>
+                <a href="https://amangoswami01.github.io/portfolio-website/" target="_blank">View Project</a>
+            </div>
+            <div class="project-card">
+                <h3>Power BI Pizza-Sales-Dashboard</h3>
+                <p>An interactive Power BI dashboard for data visualization.</p>
+                <a href="https://amangoswami01.github.io/Pizza-Sale-Dashboard/" target="_blank">View Project</a>
+            </div>
+            <div class="project-card">
+                <h3>Power BI Mobile-Sales-Dashboard</h3>
+                <p>An interactive Power BI dashboard for data visualization.</p>
+                <a href="https://amangoswami01.github.io/mobile-sales-dashboard/" target="_blank">View Project</a>
+            </div>
+            <div class="project-card">
+                <h3>Power BI Mobile-Sales-Dashboard</h3>
+                <p>An interactive Power BI dashboard for data visualization.</p>
+                <a href="https://amangoswami01.github.io/mobile-sales-dashboard/" target="_blank">View Project</a>
+            </div>
+            <div class="project-card">
+                <h3>Power BI Mobile-Sales-Dashboard</h3>
+                <p>An interactive Power BI dashboard for data visualization.</p>
+                <a href="https://amangoswami01.github.io/mobile-sales-dashboard/" target="_blank">View Project</a>
+            </div>
+        </div>
+    </section>
+
+        <!-- ✅ Testimonials Section -->
+        <section id="testimonials" class="testimonials">
+            <h2>What People Say</h2>
+        
+            <!-- ✅ Swiper Container -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    
+                    <!-- ✅ Testimonial 1 -->
+                    <div class="swiper-slide testimonial">
+                        <p>"Aman is a great developer! Highly recommended."</p>
+                        <h4>- John Doe</h4>
+                    </div>
+        
+                    <!-- ✅ Testimonial 2 -->
+                    <div class="swiper-slide testimonial">
+                        <p>"His Power BI dashboards are super insightful!"</p>
+                        <h4>- Jane Smith</h4>
+                    </div>
+        
+                    <!-- ✅ Testimonial 3 -->
+                    <div class="swiper-slide testimonial">
+                        <p>"Creative and professional. Love working with him!"</p>
+                        <h4>- Alex Brown</h4>
+                    </div>
+        
+                </div>
+        
+                <!-- ✅ Swiper Navigation Buttons -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+        
+                <!-- ✅ Swiper Pagination (Dots) -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+    <!-- Dark Mode Button -->
+    
+    
+        <!-- ✅ Contact Form Section -->
+        <section id="contact" class="contact-form fade-in">
+            <h2>Contact Me</h2>
+            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+    </div>
+    
+<!-- ✅ Footer Section -->
+<footer>
+    <p>&copy; 2024 Aman Goswami. All Rights Reserved.</p>
+    
+    <div class="social-links">
+        <a href="https://github.com/Amangoswami01" target="_blank">🔗 GitHub</a>
+        <a href="https://www.linkedin.com/in/aman-goswami-m7/?originalSubdomain=in" target="_blank">🔗 LinkedIn</a>
+    </div>
+
+    <!-- ✅ Back to Top Button -->
+    <button onclick="scrollToTop()" class="back-to-top">⬆ Back to Top</button>
+</footer>
+<button id="darkModeToggle">Dark Mode</button>
+    <script>
+  function scrollToTop() {
+      window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+      });
+  }
+</script>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>AOS.init();</script>
+    <script src="script.js"></script> <!-- JavaScript Link -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+  var swiper = new Swiper(".mySwiper", {
+      loop: true,  // Auto-loop
+      autoplay: {
+          delay: 3000,  // Slide change every 3 sec
+          disableOnInteraction: false,  // User swipe kare to autoplay na rukhe
+      },
+      navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+      },
+  });
+</script>
+<script src="script.js"></script>
+
+</body>
+</html>
