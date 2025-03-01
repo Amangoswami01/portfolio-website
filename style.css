@@ -419,7 +419,46 @@ html {
 .contact-form button:hover {
     background: #0056b3;
 }
+
 footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between; /* Even spacing */
+    align-items: center; /* Center vertically */
+    flex-wrap: wrap; /* Responsive handling */
+}
+
+footer .copyright {
+    font-size: 14px;
+    white-space: nowrap; /* Prevent line break */
+}
+
+footer .social-links {
+    display: flex;
+    gap: 15px; /* Space between icons */
+}
+
+footer .back-to-top {
+    padding: 8px 15px;
+    background: #6a0dad;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+footer .back-to-top:hover {
+    background: #540a9d;
+}
+
+
+
+/* footer {
     background: #333;
     color: white;
     text-align: center;
@@ -453,3 +492,4 @@ footer .social-links a:hover {
 .back-to-top:hover {
     background: #540a9d;
 }
+ */
