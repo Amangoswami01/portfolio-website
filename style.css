@@ -29,6 +29,10 @@ body {
     color: white;
     text-decoration: none;
 }
+.navbar a.active {
+    color: cyan;
+    font-weight: bold;
+}
 
 /* Hero Section */
 .hero {
