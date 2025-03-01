@@ -1,3 +1,30 @@
+// Smooth Scroll Fix
+document.querySelectorAll('.navbar a').forEach(link => {
+    link.addEventListener('click', function(e) {
+        e.preventDefault();
+        let target = document.querySelector(this.getAttribute('href'));
+        target.scrollIntoView({ behavior: 'smooth' });
+    });
+});
+
+// Dark Mode Toggle
+const darkModeToggle = document.getElementById("darkModeToggle");
+
+darkModeToggle.addEventListener("click", function () {
+    document.body.classList.toggle("dark-mode");
+
+    if (document.body.classList.contains("dark-mode")) {
+        document.body.style.backgroundColor = "#222";
+        document.body.style.color = "white";
+    } else {
+        document.body.style.backgroundColor = "#f4f4f4";
+        document.body.style.color = "black";
+    }
+});
+
+
+
+
 // Button click pe text change karne ka function
 function changeMessage() {
     document.getElementById("message").innerText = "Thanks for visiting my portfolio!";
