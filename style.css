@@ -56,12 +56,12 @@ body {
 .hero-content {
     max-width: 600px;
 }
-.hero-image img {
+/* .hero-image img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
 }
-
+ */
 /* Projects */
 .projects-container {
     display: flex;
