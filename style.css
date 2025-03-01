@@ -72,7 +72,7 @@ body {
     position: fixed;
     bottom: 20px;
     left: 90%;
-    transform: translateX(35%);
+    transform: translateX(20%);
     padding: 10px 10px;
     background: #000;
     color: white;
