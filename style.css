@@ -502,7 +502,7 @@ footer .back-to-top:hover {
 }
 
 .view-projects:hover {
-    background: #a29bfe; /* Light purple on hover */
+    background: #f9fe9b; /* Light purple on hover */
     transform: scale(1.05);
 }
 
@@ -521,6 +521,6 @@ footer .back-to-top:hover {
 }
 
 .social-links a:hover {
-    color: #6c5ce7;
+    color: #f9fe9b;
     transform: scale(1.2);
 }
