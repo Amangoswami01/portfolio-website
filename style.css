@@ -41,27 +41,27 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: 80vh; /* Isko chhota kiya */
-    padding: 50px 20px; /* Padding reduce ki */
+    height: 80vh; /* Compact height */
+    padding: 20px;
     position: relative;
 }
 
 .hero img {
-    width: 180px; /* Image ka size adjust kiya */
+    width: 180px; /* Adjusted size */
     border-radius: 50%;
-    position: absolute;
-    top: 10%; /* Image ko text ke upar shift kiya */
+    margin-bottom: 10px; /* Space below image */
 }
+
+.hero h1 {
+    font-size: 2.5rem; /* Better heading size */
+    margin-top: 10px; /* Adjusted spacing */
+}
+
 
 .hero-content {
     max-width: 600px;
 }
-/* .hero-image img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-}
- */
+
 /* Projects */
 .projects-container {
     display: flex;
