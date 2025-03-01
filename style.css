@@ -94,13 +94,61 @@ html {
     max-width: 600px;
 }
 
-/* ✅ Projects Section */
-.projects-container {
+/* Social Icons */
+.social-links {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    padding: 50px 10px;
+    gap: 20px; /* Space between icons */
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+}
+
+.social-links a:hover {
+    color: #ff7eb3;
+}
+/* Dark Mode Styles */
+.dark-mode {
+    background: linear-gradient(135deg, #232526, #414345);
+    color: #ddd;
+}
+
+.dark-mode .container {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.dark-mode button {
+    background: #ffd700;
+    color: black;
+}
+
+.dark-mode-btn {
+    margin-top: 20px; /* Niche space dena */
+    padding: 10px 20px; /* Button ko proper size dena */
+    background: #ff66b2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.dark-mode button:hover {
+    background: #ffcc00;
+}
+
+
+/* Projects Section */
+.projects {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
 }
 
 .project-card {
@@ -127,7 +175,8 @@ html {
     color: #0056b3;
 }
 
-/* ✅ Skills Section */
+/* Skills css */
+
 .skills {
     text-align: center;
     margin: 40px 0;
@@ -154,11 +203,12 @@ html {
     transition: width 1s ease-in-out;
 }
 
-/* ✅ Testimonials Section */
+/* Testimonials Section */
+
 .testimonials {
     text-align: center;
     padding: 50px 20px;
-    margin: 50px auto;
+    margin: 50px auto;  /*    aman */
     border-radius: 10px;
     background: #f8f9fa;
     color: #3973fa;
@@ -173,16 +223,18 @@ html {
 .testimonial {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
     word-wrap: break-word;
 }
-
 .testimonial-slider {
-    max-width: 90%;
+    max-width: 90%;  /* Slider ko responsive banane ke liye */
     padding: 20px;
 }
 
 .testimonial-card {
-    min-height: 120px;
+    min-height: 120px;  /* Text ko cut hone se bachane ke liye */
     padding: 20px;
 }
 
@@ -195,41 +247,28 @@ html {
     background: #6a0dad;
 }
 
-/* ✅ Dark Mode */
-.dark-mode {
-    background: linear-gradient(135deg, #232526, #414345);
-    color: #ddd;
-}
-.dark-mode .navbar {
-    background: rgba(0, 0, 0, 0.9);
-}
-.dark-mode .project-card, .dark-mode .testimonials {
-    background: #333;
-    color: white;
-}
-.dark-mode button {
-    background: #ffd700;
-    color: black;
-}
-.dark-mode button:hover {
-    background: #ffcc00;
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 
-/* ✅ Profile Picture Styling */
-.profile-img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid #6a0dad;
-    margin-bottom: 15px;
+/* Fade-in effect */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
-/* ✅ Contact Form */
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .contact-form {
     max-width: 500px;
-    margin: 0 auto;
+    margin: 0 auto; /* Centering */
     padding: 20px;
     background: white;
     border-radius: 10px;
@@ -254,7 +293,7 @@ html {
 
 .contact-form textarea {
     resize: none;
-    height: 120px;
+    height: 120px; /* Fix for better height */
 }
 
 .contact-form button {
@@ -272,8 +311,6 @@ html {
 .contact-form button:hover {
     background: #0056b3;
 }
-
-/* ✅ Footer */
 footer {
     background: #333;
     color: white;
