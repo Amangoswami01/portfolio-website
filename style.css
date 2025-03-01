@@ -15,11 +15,16 @@ body {
     justify-content: space-between; /* Logo left, links right */
     box-sizing: border-box;
     padding: 10px 20px;
-    background: #2c2c2c; /* Change to any color you want */
+     yhe likh rha navbar ke liye yhe hata do 
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 0px 20px;
+    background: transparent; /* Dark Purple */
     transition: background 0.3s ease-in-out;
     z-index: 1000;
 }
-
 
 .logo {
     width: 50px; /* Adjust as needed */
