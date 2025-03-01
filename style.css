@@ -14,8 +14,7 @@ body {
     align-items: center; /* Vertical align */
     justify-content: space-between; /* Logo left, links right */
     box-sizing: border-box;
-    padding: 10px 20px;
-     yhe likh rha navbar ke liye yhe hata do 
+    padding: 10px 20px; 
     position: fixed;
     width: 100%;
     top: 0;
