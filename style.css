@@ -263,6 +263,16 @@ html {
     scroll-behavior: smooth;
 }
 
+.dark-mode .project-card {
+    background: #333;
+    color: white;
+}
+.cta-button {
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
 
 /* Portfolio Card */
 .container {
