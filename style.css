@@ -211,6 +211,36 @@ html {
     background: #ffcc00;
 }
 
+/* Projects */
+.projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 50px 10px;
+}
+.project-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Dark Mode Button */
+#darkModeToggle {
+    position: fixed;
+    bottom: 20px;
+    left: 90%;
+    transform: translateX(35%);
+    padding: 10px 10px;
+    background: #000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
 /* Projects Section */
 .projects {
