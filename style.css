@@ -101,17 +101,15 @@ body {
     max-width: 600px;
 }
 .hero-content p {
-    margin-bottom: 10px; /* Reduce bottom margin */
+    margin-bottom: 5px; /* Reduce bottom margin */
 }
 
 .hero-content a {
     display: inline-block;
-    margin-bottom: 10px; /* Adjust gap below "View Projects" */
+    margin-bottom: 5px; /* Adjust gap below "View Projects" */
 }
 
-.social-links {
-    margin-top: 15px; /* Reduce space above social links */
-}
+
 
 /* Scroll Effect */
 .scrolled {
@@ -172,7 +170,7 @@ html {
     display: flex;
     justify-content: center;
     gap: 20px; /* Space between icons */
-    margin-top: 15px;
+    margin-top: 0px;
 }
 
 .social-links a {
