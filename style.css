@@ -37,14 +37,22 @@ body {
 /* Hero Section */
 .hero {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: 100vh;
-    background: linear-gradient(135deg, #4b6cb7, #182848);
-    color: white;
-    padding: 50px 10px;
+    height: 80vh; /* Isko chhota kiya */
+    padding: 50px 20px; /* Padding reduce ki */
+    position: relative;
 }
+
+.hero img {
+    width: 180px; /* Image ka size adjust kiya */
+    border-radius: 50%;
+    position: absolute;
+    top: 10%; /* Image ko text ke upar shift kiya */
+}
+
 .hero-content {
     max-width: 600px;
 }
