@@ -20,11 +20,13 @@ html {
     width: 100%;
     top: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0.9); /* Black background with opacity */
     padding: 10px 0;
     text-align: center;
     z-index: 1000;
+    transition: background 0.3s ease-in-out;
 }
+
 
 .navbar ul {
     list-style: none;
@@ -198,20 +200,21 @@ html {
     background: linear-gradient(135deg, #232526, #414345);
     color: #ddd;
 }
-
-.dark-mode .project-card, .dark-mode .testimonial-card {
+.dark-mode .navbar {
+    background: rgba(0, 0, 0, 0.9);
+}
+.dark-mode .project-card, .dark-mode .testimonials {
     background: #333;
     color: white;
 }
-
 .dark-mode button {
     background: #ffd700;
     color: black;
 }
-
 .dark-mode button:hover {
     background: #ffcc00;
 }
+
 
 /* ✅ Profile Picture Styling */
 .profile-img {
